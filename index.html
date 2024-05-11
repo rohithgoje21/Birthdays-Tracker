@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BirthDay</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Birthdays</h1>
+        </div>
+        <div class="section">
+            <h3>Add a BirthDay</h3>
+            <form action="/" method="post">
+                <input name="name" placeholder="Name" type="text">
+                <input name="month" placeholder="Month" type="number" min="1" max="12">
+                <input name="date" placeholder="Date" type="number" min="1" max="31">
+                <input type="button" value="Add Birthday">
+            </form>
+            <br>
+            <h3>All BirthDays</h3>
+            <table>
+                <tr>
+                    <th>Name</th>
+                    <th>Birthday (Month/Date)</th>
+                </tr>
+            </table>
+
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+
+</html>
