@@ -34,7 +34,6 @@ body {
 
 .section:hover {
     background-color: #f5f5f5;
-    transition: color 2s ease-in-out, background-color 0.15s ease-in-out;
 }
 
 h1 {
@@ -42,27 +41,35 @@ h1 {
     font-size: 48px;
 }
 
-button, input[type="button"] {
-    background-color: #d9edff;
+button,
+input[type="button"] {
+    background-color: #477bff;
     border: 1px solid transparent;
     border-radius: 0.25rem;
     font-size: 0.95rem;
     font-weight: 400;
-    line-height: 1.5;
+    line-height: 1.1;
     padding: 0.375rem 0.75rem;
     text-align: center;
-    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
     vertical-align: middle;
 }
 
-input[type="text"], input[type="number"] {
+input[type="text"],
+input[type="number"] {
     line-height: 1.8;
     width: 25%;
 }
 
-input[type="text"]:hover, input[type="number"]:hover {
+input[type="text"]:hover,
+input[type="number"]:hover {
     background-color: #f5f5f5;
-    transition: color 2s ease-in-out, background-color 0.15s ease-in-out;
+    transition: all 1s ease-in 0s;
+    transform: scale(1.05);
+}
+
+input[type="button"]:hover {
+    transition: all 1s ease-in 0s;
+    transform: scale(1.05);
 }
 
 table {
@@ -78,7 +85,30 @@ table td {
 }
 
 tbody tr:nth-of-type(odd) {
-    background-color: rgb(179, 208, 255, 0.3)
+    background-color: rgb(179, 208, 255, 0.3);
 }
 
+table button {
+    background-color: #477bff;
+    margin-left: 1px;
+    display: none;
+}
 
+table input {
+    margin-left: 1px;
+}
+
+table tr:hover {
+    background-color: rgba(80, 112, 163, 0.4);
+    transition: all 1s ease-in 0s;
+    transform: scale(1.01);
+}
+
+table tr:hover button {
+    display: inline;
+}
+
+table button:active {
+    background-color: aqua;
+    display: none;
+}
