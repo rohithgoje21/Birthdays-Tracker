@@ -107,8 +107,3 @@ table tr:hover {
 table tr:hover button {
     display: inline;
 }
-
-table button:active {
-    background-color: aqua;
-    display: none;
-}
